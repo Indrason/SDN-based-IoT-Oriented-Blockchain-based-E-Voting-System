@@ -60,7 +60,7 @@ Fig 8. Scyther Output of Voter Authentication
 
 Fig 9. Scyther Output of Voting Process
 
-Scyther is a formal protocol verification tool to ensure better security of the system. It verifies the security status of the proposed protocol.
+Scyther is a formal protocol verification tool to ensure better security of the system. It verifies the security status of the proposed protocol. It also provides attack detection and analysis to safeguard against any possible attacks. So, it ensures that all data exchanges between communicating entities are not only confidential and authentic but also maintain synchronization across all interconnected devices.
 
 ## V. Demonstration of Operating System level security
 
