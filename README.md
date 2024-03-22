@@ -6,6 +6,10 @@ This repository contains the experimental output of the voting system. It also c
 
 Fig 1. Experimental Setup of the Voting System.
 
+Fig 1 shows the test-bed setup of the multi-layered voting system. Three computers running Ubuntu 20.04 OS are used representing District Level, State Level and Country Level. One Raspberry Pi is also used to represent Booth Level. This Booth Level device is responsible for collecting votes from the valid voters.
+
+## I. Output of authentication processes of booth and voter process.
+
 ![Successful Authentication of Booth](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/f2f4f048-1bfa-4696-a324-7e11a1b491cd)
 
 Fig 2. Successful Authentication of Booth.
@@ -18,6 +22,10 @@ Fig 3. Invalid Authentication of Booth.
 
 Fig 4. Display of Voter Authentication.
 
+Fig 2 and Fig 3 shows the successful and invalid authentication of Booth respectively. And Fig 4 represents the authentication of Voter.
+
+## II. Output of results of successful vote casting and counting of votes
+
 ![Display of Vote Casting System](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/a81146a5-8216-4608-9aab-4ab7ca132f6f)
 
 Fig 5. Display of Vote Casting System.
@@ -25,6 +33,10 @@ Fig 5. Display of Vote Casting System.
 ![Display of Counting of Votes](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/1b00b4dc-874b-4180-a11c-cb4b78b7130e)
 
 Fig 6. Display of Counting of Votes
+
+Fig 5 shows the casting of vote by a valid voter where the voter has to choose a desired candidate from a list of potential candidates. After choosing the candidate, the vote is saved and sent it to the higher heirarchical layers. After voting process has completed, at a specific date and time counting of votes take place. It is represented in Fig. 6.
+
+## III. Scyther output
 
 ![Scyther output of Booth Authentication](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/adbb429b-483c-4308-95d1-9547af5880c1)
 
