@@ -1,4 +1,4 @@
-![Experimental Setup of the Voting System](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/d3eb8f41-aed5-4d02-9362-f73ba3e41e1d)# Output of the security analysis of SDN-based-IoT-Oriented Blockchain Protected E-Voting System
+# Output of the security analysis of SDN-based-IoT-Oriented Blockchain Protected E-Voting System
 
 This repository contains the experimental output of the voting system. It also contains the output of Scyther Tool for showing the security status of the voting system at different functional levels.
 
@@ -22,7 +22,18 @@ Fig 4. Display of Voter Authentication.
 
 Fig 5. Display of Vote Casting System.
 
+![Display of Counting of Votes](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/1b00b4dc-874b-4180-a11c-cb4b78b7130e)
 
+Fig 6. Display of Counting of Votes
 
+![Scyther output of Booth Authentication](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/adbb429b-483c-4308-95d1-9547af5880c1)
 
+Fig 7. Scyther Output of Booth Authentication
 
+![Scyther output of Voter Authentication](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/b2301f1e-59ec-4e5d-9e9d-9c8e1ecd3e0f)
+
+Fig 8. Scyther Output of Voter Authentication
+
+![Scyther output of voting process](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/f59c6cba-5a54-4e0b-a1f6-669291b13a04)
+
+Fig 9. Scyther Output of Voting Process
