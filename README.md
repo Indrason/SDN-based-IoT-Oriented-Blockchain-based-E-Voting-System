@@ -32,7 +32,7 @@ Fig 3. Invalid Authentication of Booth.
 
 Fig 4. Display of Voter Authentication.
 
-Fig 2 and Fig 3 show the successful and invalid authentication of Booth respectively. While communicating between the Booth device and the District machine, Booth information is encrypted using Elliptic Curve Cryptography (ECC). The booth details are already stored in the district blockchain and it is used to validate the device. Fig 4 represents the authentication of Voter. Voter information is also stored in district level blockchain and his/her voting status is also stored there.
+Fig 2 and Fig 3 show the successful and invalid authentication of Booth respectively. While communicating between the Booth device and the District machine using Message Queue Telemetry Transport (MQTT) protocol, Booth information is encrypted using Elliptic Curve Cryptography (ECC). The booth details are already stored in the district blockchain and it is used to validate the device. Fig 4 represents the authentication of Voter. Voter information is also stored in district level blockchain and his/her voting status is also stored there.
 
 ## III. Output of results of successful vote casting and counting of votes
 
@@ -44,7 +44,7 @@ Fig 5. Display of Vote Casting System.
 
 Fig 6. Display of Counting of Votes
 
-Fig 5 shows the casting of vote by a valid voter where the voter has to choose a desired candidate from a list of potential candidates. After choosing the candidate, the vote is saved and sent it to the higher heirarchical layers. After voting process has completed, at a specific date and time counting of votes take place. It is represented in Fig. 6.
+Fig 5 shows the casting of vote by a valid voter where the voter has to choose a desired candidate from a list of potential candidates. After choosing the candidate, the vote is hashed using sha3_256() and encrypted using ECC. The encrypted vote is saved and sent it to the higher hierarchical layers using MQTT. After the voting process has completed, at a specific date and time counting of votes takes place. It is represented in Fig. 6.
 
 ## IV. Demonstration of Programming level security
 
@@ -68,20 +68,24 @@ Scyther is a formal protocol verification tool to ensure better security of the 
 
 Fig 10. Output of NMAP commands
 
-NMAP tool checks for any open ports and vulnerabilities available in the system.
+![Metasploit](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/5bdd68f0-8943-45d4-8a47-48f748af82a2)
+
+Fig 11. Metasploit window
+
+NMAP is an open-source utility for network discovery and security auditing. NMAP tool checks for any open ports and vulnerabilities available in the system. Metasploit is a sophisticated penetration testing framework that offers an extensive payload and exploit library. It can be employed to simulate real-world attacks and exploit these vulnerabilities in a controlled environment.
 
 ## VI. Demonstration of Network level security
 
 ![Iprables rules](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/9191fe5d-9f80-44d6-b628-036578a645ef)
 
-Fig 11. Output of Iptables rules
+Fig 12. Output of Iptables rules
 
 ![Suricata output](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/03a04f6a-9e56-4db5-aa6a-2e66dda4c107)
 
-Fig 12. Running of Suricata Tools
+Fig 13. Running of Suricata Tools
 
 ![Wireshark Output](https://github.com/Indrason/SDN-based-IoT-Oriented-Blockchain-based-E-Voting-System/assets/26199016/39e504ca-8e4a-4329-a37a-5e9f3c529465)
 
-Fig 13. Running of Wireshark Tool
+Fig 14. Running of Wireshark Tool
 
-IPtables rules are the software-based firewall for the linux platform.
+Iptables rules are the software-based firewall for the Linux platform. Iptables enables us to proactively block suspicious IP addresses to mitigate potential threats before they can reach the system. Suricata is an open-source intrusion detection system (IDS) and intrusion prevention system (IPS). It can identify and alert us to potential intrusion attempts, malware infections, or other malicious activities. Using this tool, the network activities can be vigilantly monitored and prevent any potential threats to our network integrity. Wireshark is a packet analyzer tool that tracks data flow in the network. It enables us to identify and investigate any anomalous network activities or patterns that may indicate potential security breaches, unauthorized access attempts, or other malicious activities. 
